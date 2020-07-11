@@ -1,2 +1,3 @@
-# tkasvala.github.io
-My Personal Homepage
+# Twinkle Kasvala
+
+Say thanks to Jujudu!
