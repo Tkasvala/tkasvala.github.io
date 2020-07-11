@@ -11,8 +11,31 @@
     <title> Tikudu </title>
   </head>
   <body>
-    <h1>Twinkal Kasvala</h1>
-<p> welcome to my homepage </p>
+    
+    <div class="container"> <!-- every layout need a container -->
+
+      <div class="row text-center"> <!-- first row will be header -->
+
+        <!-- column is 12-cell wide (mean full width); -->
+        <!-- p-5 means padding 5 unit padding. -->
+        <div class="col-md-12 card p-5 bg-dark text-white"> 
+          <h1 class="font-weight-bolder">Twinkal Kasvala</h1>
+          <p>A bright student!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card col-md-12 text-center" style="height:500px;">Just place holder</div>
+      </div>
+
+      <div class="row text-center"> <!-- the last row will be footer -->
+        <div class="col-12 card p-0 p-t-1 m-0 bg-darker"> <!-- column is 12-cell wide (mean full width); p-5 means padding 5 unit padding. -->
+          <p>Thanks to <a href="http://girishponkiya.github.io">Girishkumar</a> for help!</p>
+        </div>
+      </div>
+
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
