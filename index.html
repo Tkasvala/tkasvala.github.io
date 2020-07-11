@@ -50,6 +50,25 @@
                 <!-- Two more menu items -->
                 <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+                <!-- item with sub-menu -->
+                <!-- It has two parts: anchor to attach a list, and a list to be attached. -->
+                <li class="nav-item dropdown">
+
+                  <!-- This will be part of the main menu. -->
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  
+                  <!-- a list to be shown on click -->
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div> <!-- This will work as a divider in the list -->
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+
+
               </ul>
 
             </div>
