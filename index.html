@@ -14,131 +14,155 @@
     
     <div class="container"> <!-- every layout need a container -->
 
-      <div class="row text-center"> <!-- first row will be header -->
+      <div class="row text-center mt-1"> <!-- first row will be header -->
 
         <!-- column is 12-cell wide (mean full width); -->
         <!-- p-5 means padding 5 unit padding. -->
-        <div class="col-md-12 card p-5 bg-dark text-white"> 
+        <div class="col-md card p-5 m-0 shadow-lg bg-dark text-white"> 
           <h1 class="font-weight-bolder">Twinkal Kasvala</h1>
-          <p>A bright student!</p>
+          <h5>B.E. student at L.D. College, Ahemdabad</h5>
+          <span id="contct">
+
+            <a href="mailto:twinkalkasvala@gmail.com">
+              <abbr title="Email">
+              <!-- ICON from: https://github.com/danklammer/bytesize-icons -->
+              <svg id="i-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M2 26 L30 26 30 6 2 6 Z M2 6 L16 16 30 6" />
+              </svg>
+              <!-- twinkalkasvala@gmail.com -->
+              </abbr>
+            </a>
+
+            <!-- devider -->
+            <span class="">·</span>
+            
+            <a href="https://github.com/tkasvala" target="_blank">
+              <abbr title="GitHub profile">
+              <svg id="i-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="20" height="20">
+                <path stroke-width="0" fill="white" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
+              </svg><!-- /tkasvala -->
+              </abbr>
+            </a>
+          </span>
         </div>
       </div>
 
-      <div class="row"> <!-- create a row: virtually, a row had 12 "columns" -->
-        <!-- please note that all boxes are aligned at the bottom -->
-        <!-- four boxes with equal width (3 cols) -->
-        <div class="col-md-3 card">
-          <p>Some quick example text to build and make up the bulk of the card's content.</p>
-        </div>
-        <div class="col-md-3 card">
-          <p>Some quick example text to build and make up the bulk of the card's content.</p>
-          <p>Some quick example text to build and make up the bulk of the card's content.</p>
-        </div>
-        <div class="col-md-3 card">
-          <p>Some quick example text to build and make up the bulk of the card's content.</p>
-        </div>
-        <div class="col-md-3 card">
-          <p>Some quick example text to build and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <!-- This card has an image in header and text (title + paragraph) and button as content. -->
-        <!-- card width is 3-cols -->
-        <!-- p-0 mean padding zero -->
-        <!-- m-1 means margin 1-unit -->
-        <!-- shadow-lg says draw a large shadow -->
-        <div class="col-md-3 card p-0 m-2 shadow-lg" >
+      <div class="row mt-0 mb-2 shadow-lg">
+        <div class="col-md-3 card p-0 mt-1" >
           
-          <!-- Card image -->
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+          <div class="card-header font-weight-bold">Menu</div>
           
-          <!-- Card content -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title"><a>Card title</a></h4>
-            <!-- Text -->
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <!-- Button -->
-            <a href="#" class="btn btn-primary">Button</a>
-          </div>
-        </div>
-
-        <!-- The second card -->
-        <div class="col-md-3 card p-0 m-2 shadow-sm">
-          <div class="card-header">
-            Featured
-          </div>
-          
-          <!-- Card content -->
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-
           <!-- a list of items -->
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="list-group-item"><a href="#education">Education</a></li>
+            <li class="list-group-item"><a href="#skills">Skills</a></li>
+            <li class="list-group-item"><a href="#achivements">Achivements</a></li>
+            <li class="list-group-item"><a href="#contact">Contact</a></li>
           </ul>
-
-          <!-- Card content, again -->
-          <div class="card-body">
-            <a href="#" class="btn btn-primary">Submit</a>
-            <a href="#" class="btn btn-secondary">Cancel</a>
-            <a href="#" class="card-link">Card link</a>
-          </div>
         </div>
 
+        <div class="col-md-9 p-0 m-0">
 
-        <!-- third card: a login form -->
-        <!-- Try clicking on the text-box -->
-        <div class="col-md-3 card p-0 m-2 shadow-lg">
-          <div class="card-header">
-            Login
-          </div>
-          <div class="card-body">
-            <form>
-              <!-- group a label and control together: If you click on label, focus will be set to the control. -->
-              <div class="form-group">
-                <label for="exampleDropdownFormEmail2">Email address</label>
-                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
-              </div>
-              <div class="form-group">
-                <label for="exampleDropdownFormPassword2">Password</label>
-                <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                  <label class="form-check-label" for="dropdownCheck2">Remember me</label>
-                </div>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-outline-primary">Sign Up</button> 
-                <button type="submit" class="btn btn-primary">Login</button>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <!-- please note that the size of cols is not specified; it's automatic. -->
-        <div class="col-md card p-0 m-2 shadow-lg">
-          <div class="card-header">
-            Empty card
-          </div>
-          <div class="card-body">
-            <p>This card occupies the left over space.</p>
-
-            <!-- You can different types of such messages (called alerts). -->
-            <!-- More info: https://getbootstrap.com/docs/4.5/components/alerts --> 
-            <div class="alert alert-info">
-              Did you notice the different shadow for the cards?
+          <!-- Education -->
+          <div class="card m-1 shadow-sm" id="education">
+            <div class="card-header font-weight-bold">
+              Education
+            </div>
+            <div class="card-body p-1">
+              <table class="table table-hover">
+                <thead>
+                  <!-- table header -->
+                  <tr>
+                    <th scope="col">Qualifaction</th>
+                    <th scope="col">Board/University</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">CPI / %</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr> <!-- BE -->
+                    <td>B.E. (IT)</th>
+                    <td>Gujrat Technology University</td>
+                    <td>2018-2021</td>
+                    <td>7.04</td>
+                  </tr>
+                  <tr> <!-- HSC -->
+                    <td>HSC</th>
+                    <td>Gujrat Board (GSHSEB)</td>
+                    <td>2018</td>
+                    <td>x.xx %</td>
+                  </tr>
+                </tbody>
+              </table>              
             </div>
           </div>
+
+          <!-- Skills -->
+          <div class="card m-1 shadow-sm" id="skills">
+            <div class="card-header font-weight-bold">
+              Skills
+            </div>
+            <div class="card-body p-1">
+
+              <!-- create a list of skills -->
+              <ul class="list-group">
+                <li class="list-group-item"><span class="font-weight-bold">Programmimg Language:</span> C, C++, JAVA.
+                <li class="list-group-item"><span class="font-weight-bold">Social Media:</span> publicity via Instagram.
+              </ul>
+              
+            </div>
+          </div>
+
+          <!-- Other Achivements -->
+          <div class="card m-1 shadow-sm" id="achivements">
+            <div class="card-header font-weight-bold">
+              Achivements
+            </div>
+            <div class="card-body p-1">
+
+              <!-- create a list of skills -->
+              <ul class="list-group">
+                <li class="list-group-item"><span class="font-weight-bold">HACKATHON Winner</span>, at [where?] (when?)
+                <li class="list-group-item">Social media influencer: <span class="font-weight-bold">10,xxx</span> followers on Intagram.
+              </ul>
+
+            </div>
+          </div>
+          
+          <!-- Contact -->
+          <div class="card m-2" id="contact">
+            <div class="card-header font-weight-bold">
+              Contact
+            </div>
+
+            <div class="card-body">
+              <address>
+                <strong>Twinkal Kasvala</strong><br/>
+                Somewhere on the Earth,<br/>
+                Solar System, Milky Way, Laniakea
+             </address>
+
+              <a href="mailto:twinkalkasvala@gmail.com">
+                <abbr title="Email">
+                <!-- ICON from: https://github.com/danklammer/bytesize-icons -->
+                <svg id="i-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M2 26 L30 26 30 6 2 6 Z M2 6 L16 16 30 6" />
+                </svg></abbr>:
+                twinkalkasvala@gmail.com
+              </a><br/>
+
+              <a href="https://github.com/tkasvala" target="_blank">
+                <abbr title="GitHub profile">
+                <svg id="i-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="20" height="20">
+                  <path stroke-width="0" fill="black" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
+                </svg></abbr>:
+                https://github.com/tkasvala
+              </a>
+
+            </div>
+          </div>
+
         </div>
-
-
       </div>
 
       <div class="row text-center"> <!-- the last row will be footer -->
